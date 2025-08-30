@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Raleway";
+  overflow-x: hidden;
+}
+
+.content-wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo img {
+  width: 109px;
+  height: 19px;
+  margin-top: 46px;
+  margin-bottom: 36px;
+}
+
+.nav-list {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 26px;
+}
+
+.nav-list-left {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+}
+
+.nav-list-left li {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.nav-list-right {
+  display: flex;
+  list-style: none;
+  gap: 14px;
+}
+
+.nav-list-right li {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.border {
+  width: 1000px;
+  border-top: 1px solid #c3c3c3;
+  margin: 0 auto;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.mainvisual {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  margin-right: 60px;
+  margin-top: 50px;
+}
+
+.section-title {
+  max-width: 340px;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section-title h1 {
+  padding: 20px 0;
+  font-weight: bold;
+  text-align: left;
+  border-top: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.section-title p {
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 2;
+  text-align: left;
+}
+
+.price {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.select-table {
+  max-width: 340px;
+  font-size: 12px;
+  color: #333;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.select-table td {
+  border: none; /* 外枠なし！ */
+  border-bottom: 1px solid #c3c3c3; /* 下線だけ */
+  border-right: 1px solid #c3c3c3;
+  text-align: center;
+  padding: 10px;
+}
+
+.select-table td:last-child {
+  border-right: none;
+}
+
+.select-table tr:last-child td {
+  border-bottom: none; /* 最後の行は線なし */
+}
+
+.select-table tr:first-child td {
+  border-bottom: 1px solid #c3c3c3; /* 最後の行は線なし */
+}
+
+.select-table select {
+  width: 100%;
+  border: 1px solid #c3c3c3;
+  align-items: center;
+  font-size: 12px;
+  color: #333;
+}
+
+button {
+  font-size: 12px;
+  background-color: #4b4b4b;
+  color: white;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+}
+
+/* サイズ表 */
+table.size-table {
+  width: 100%;
+  border-collapse: collapse; /* 線をすっきり重ねる */
+  margin-top: 30px;
+  font-size: 12px;
+  margin-bottom: 110px;
+}
+
+.size-table th,
+.size-table td {
+  border: 1px solid #c3c3c3; /* 枠線を付ける */
+  padding: 12px 8px;
+  text-align: center;
+}
+
+/* 項目（thead）だけ背景色をつける */
+.size-table thead th {
+  background-color: #ecebeb; /* 薄いグレー（好みで変えてOK） */
+}
+.size-table td:first-child {
+  background-color: #ecebeb;
+}
+
+footer {
+  font-size: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 896px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    overflow-x: auto;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 0 19px 16px 19px;
+    white-space: nowrap;
+    gap: 14px;
+  }
+
+  .logo img {
+    margin-top: 36px;
+    margin-bottom: 26px;
+  }
+
+  .border {
+    width: 100%;
+    border: none;
+  }
+
+  .mainvisual {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 16px;
+  }
+
+  .top {
+    width: 100%;
+    display: block;
+  }
+
+  .section-title {
+    margin: 0 auto;
+  }
+
+  .section-title p {
+    text-align: left;
+  }
+}
